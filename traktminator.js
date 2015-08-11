@@ -1,39 +1,36 @@
 #!/usr/bin/env node
 
-const tmenu = require('terminal-menu')
-    , path = require('path')
-    , http = require('http')
-    , request = require('request')
+const blessed = require('blessed')
+    , request = require('request');
 
-var menu = tmenu({ width: 29, x: 4, y: 2, bg: 17 });
-
-menu.reset();
-
-menu.write('TRAKTMINATOR');
-menu.write('-------------------------\n');
-
-menu.add('TELL ME A STORY');
-
-menu.on('select', function (label) {
-    menu.close();
-    console.log('\nSELECTED: ' + label);
-    request({
-      method: 'GET',
-      url: 'https://private-anon-d06ab65ca-trakt.apiary-mock.com/comments/417',
-      headers: {
-        'Content-Type': 'application/json',
-        'trakt-api-version': '2',
-        'trakt-api-key': '[client_id]'
-      }}, function (error, response, body) {
-      console.log('Status:', response.statusCode);
-      console.log('Headers:', JSON.stringify(response.headers));
-      console.log('Response:', body);
-    });
+var screen = blessed.screen();
+var list = blessed.list({
+  parent: screen,
+  width: '50%',
+  height: '50%',
+  top: 'center',
+  left: 'center',
+  align: 'center',
+  fg: 'white',
+  bg: 17,
+  selectedBg: 17,
+  selectedFg: 'red',
+  mouse: false,
+  keys: true,
+  vi: false
 });
-process.stdin.pipe(menu.createStream()).pipe(process.stdout);
 
-process.stdin.setRawMode(true);
-menu.on('close', function () {
-    process.stdin.setRawMode(false);
-    process.stdin.end();
+list.setItems([
+  'SEARCH',
+  'LATEST EPs',
+  'SERIE FAVS',
+  'MOVIE FAVS',
+]);
+
+list.select(0);
+
+screen.key('q', function(ch, key) {
+  return process.exit(0);
 });
+
+screen.render();
