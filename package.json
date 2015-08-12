@@ -7,12 +7,18 @@
     "type": "git",
     "url": "https://github.com/rubenfreitas/traktminator.git"
   },
+  "keywords": [
+    "trakt",
+    "terminal"
+  ],
   "license": "MIT",
   "dependencies": {
-
+    "blessed": "^0.1.60",
+    "winston": "^1.0.0"
   },
+  "main": ".lib/main.js",
   "bin": {
-    "traktminator": "./traktminator.js"
+    "traktminator": "./bin/traktminator"
   },
   "preferGlobal": true
 }

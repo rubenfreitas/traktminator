@@ -9,3 +9,6 @@ pids
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
+
+# File containing secret stuff
+lib/core/secrets.json

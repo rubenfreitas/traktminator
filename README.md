@@ -2,6 +2,13 @@
 
 Interact with trakt using your terminal
 
-# license
+## install
+```
+npm install -g . . .
+```
+
+## usage
+
+## license
 
 MIT
