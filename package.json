@@ -1,8 +1,8 @@
 {
   "name": "traktminator",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Interact with trakt using your terminal",
-  "author": "Rúben Freitas <ruben.madtech@gmail.com> (https://github.com/rubenfreitas)",
+  "author": "Rúben Freitas <ruben.madtech@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/rubenfreitas/traktminator.git"
