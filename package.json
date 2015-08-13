@@ -14,7 +14,11 @@
   "license": "MIT",
   "dependencies": {
     "blessed": "^0.1.60",
-    "winston": "^1.0.0"
+    "winston": "^1.0.0",
+    "q": "^1.4.1",
+    "chalk": "^1.1.0",
+    "request": "^2.60.0",
+    "commander": "^2.8.1"
   },
   "main": ".lib/main.js",
   "bin": {
