@@ -6,21 +6,36 @@
 
 Interact with trakt using your terminal
 
-## install
-``` bash
-$ npm install -g . . .
+## Features
+
+* Search for series and movies;
+
+## Installation
+
+```bash
+    $ npm install -g . . .
 ```
 
-## usage
+## Quick Start
 
 ### Authentication
-``` bash
-$ traktminator set-auth [pin]
+
+The first thing you should do before starting the application is set the authentication pin. This requires just a couple of simple steps:
+
+Visit https://trakt.tv/pin/5820 (login required), and it will generated an alpha-numeric pin, copy it and run the following comand:
+
+```bash
+    $ traktminator set-auth [pin]
 ```
 
-``` bash
-$ traktminator test-auth
+You should be prompet with a success message, and you're good to go!
+
+There is a command available that it's on job is to test if your current authentication settings are working:
+
+```bash
+    $ traktminator test-auth
 ```
+
 
 ## license
 
