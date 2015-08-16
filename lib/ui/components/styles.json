@@ -1,0 +1,11 @@
+{
+  "text-input": {
+    "fg": "lightwhite",
+    "bg": "gray",
+
+    "focus": {
+      "fg": "lightwhite",
+      "bg": "brightblack"
+    }
+  }
+}
