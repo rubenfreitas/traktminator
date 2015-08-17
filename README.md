@@ -2,7 +2,7 @@
 [![CodeClimate](https://codeclimate.com/github/rubenfreitas/traktminator/badges/gpa.svg)](https://codeclimate.com/github/rubenfreitas/traktminator)
 [![TestCoverage](https://codeclimate.com/github/rubenfreitas/traktminator/badges/coverage.svg)](https://codeclimate.com/github/rubenfreitas/traktminator/coverage)
 
-# traktminator
+# traktminator {to be released soon}
 
 Interact with trakt using your terminal
 
@@ -12,15 +12,12 @@ Interact with trakt using your terminal
 
 ## Installation
 
-```bash
-    $ npm install -g . . .
-```
 
 ## Quick Start
 
 ### Authentication
 
-The first thing you should do before starting the application is set the authentication pin. This requires just a couple of simple steps:
+The first thing you should do is set the authentication pin. This require ou to follow the next steps:
 
 Visit https://trakt.tv/pin/5820 (login required), and it will generated an alpha-numeric pin, copy it and run the following comand:
 
@@ -36,8 +33,10 @@ There is a command available that it's on job is to test if your current authent
     $ traktminator test-auth
 ```
 
+If the test succeeds, all done for you!
 
-## license
+
+## License
 
 Copyright (c) 2015, Rúben Freitas (MIT License)
 
