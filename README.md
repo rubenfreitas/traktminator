@@ -38,6 +38,6 @@ If the test succeeds, all done for you!
 
 ## License
 
-Copyright (c) 2015, Rúben Freitas (MIT License)
+Copyright (c) 2016, Rúben Freitas (MIT License)
 
 See LICENSE for more info.
